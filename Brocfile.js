@@ -4,6 +4,14 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
+// Twitter Bootstrap
+app.import('vendor/bootstrap-sass-official/assets/javascripts/bootstrap.js');
+app.import('vendor/d3/d3.js');
+
+// app.import('vendor/bootstrap/dist/css/bootstrap.css');
+// app.import('vendor/bootstrap/dist/css/bootstrap.css.map');
+app.import('vendor/fontawesome/css/font-awesome.css');
+
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
