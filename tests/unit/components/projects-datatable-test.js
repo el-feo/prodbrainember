@@ -1,6 +1,6 @@
 import { test, moduleForComponent } from 'ember-qunit';
 
-moduleForComponent('top-area', 'TopAreaComponent', {
+moduleForComponent('projects-datatable', 'ProjectsDatatableComponent', {
   // specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar']
 });

@@ -4,12 +4,14 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
-// Twitter Bootstrap
+// Javascript Libraries
 app.import('vendor/bootstrap-sass-official/assets/javascripts/bootstrap.js');
 app.import('vendor/d3/d3.js');
+app.import('vendor/sparkline/dist/jquery.sparkline.js');
+app.import('vendor/datatables/media/js/jquery.dataTables.js');
+app.import('vendor/moment/moment.js');
 
-// app.import('vendor/bootstrap/dist/css/bootstrap.css');
-// app.import('vendor/bootstrap/dist/css/bootstrap.css.map');
+// CSS Libraries
 app.import('vendor/fontawesome/css/font-awesome.css');
 
 // Use `app.import` to add additional libraries to the generated
