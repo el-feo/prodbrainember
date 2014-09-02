@@ -5,7 +5,7 @@
     "jquery": "^1.11.1",
     "qunit": "~1.12.0",
     "ember-qunit": "~0.1.8",
-    "ember": "1.6.1",
+    "ember": "1.7.0",
     "ember-resolver": "~0.1.5",
     "loader": "stefanpenner/loader.js#1.0.0",
     "ember-cli-shims": "stefanpenner/ember-cli-shims#0.0.2",
@@ -18,6 +18,8 @@
     "moment": "~2.8.1",
     "sparkline": "~2.1.2",
     "d3": "~3.4.11",
-    "jspdf": "~1.0.178"
+    "jspdf": "~1.0.178",
+    "compass-mixins": "~1.0.1",
+    "jquery.uniform": "~2.1.2"
   }
 }

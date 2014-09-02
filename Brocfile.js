@@ -2,8 +2,7 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp({
-});
+var app = new EmberApp();
 
 // Javascript Libraries
 app.import('vendor/bootstrap-sass-official/assets/javascripts/bootstrap.js');
@@ -11,6 +10,7 @@ app.import('vendor/d3/d3.js');
 app.import('vendor/sparkline/dist/jquery.sparkline.js');
 app.import('vendor/datatables/media/js/jquery.dataTables.js');
 app.import('vendor/moment/moment.js');
+app.import('vendor/jquery.uniform/jquery.uniform.js');
 
 // CSS Libraries
 app.import('vendor/fontawesome/css/font-awesome.css');
