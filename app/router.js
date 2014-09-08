@@ -8,6 +8,9 @@ Router.map(function() {
   this.resource('projects', function() {
     this.route('show', {path: ':project_id'});
   });
+  this.resource('assignments', function() {
+    this.route('show', {path: ':assignment_id'});
+  });
 });
 
 export default Router;

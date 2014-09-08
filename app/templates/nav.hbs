@@ -3,54 +3,10 @@
 </div>
 
 <div class="primary-sidebar">
-  <ul class="nav">
-
-    <li class="">
-      <span class="glow"></span>
-      {{#link-to 'projects'}}
-        <i class="fa fa-th-list fa-2x"></i>
-        <span>All Projects</span>
-      {{/link-to}}
-    </li>
-
-    <li class="">
-      <span class="glow"></span>
-      <a href="#" id="projects_path">
-          <i class="fa fa-film fa-2x"></i>
-          <span>Project</span>
-      </a>
-    </li>
-
-    <li class="">
-      <span class="glow"></span>
-      <a href="#" id="project_purchase_order_path">
-        <i class="fa fa-files-o fa-2x"></i>
-        <span>P.O.s</span>
-      </a>
-    </li>
-
-    <li class="">
-      <span class="glow"></span>
-      <a href="#" id="project_assignments_path">
-        <i class="fa fa-group fa-2x"></i>
-        <span>Crew</span>
-      </a>
-    </li>
-
-    <li class="">
-      <span class="glow"></span>
-      <a href="#" id="project_vendors_path">
-        <i class="fa fa-barcode fa-2x"></i>
-        <span>Vendors</span>
-      </a>
-    </li>
-
-    <li class="">
-      <span class="glow"></span>
-      <a href="#" id="project_departments_path">
-        <i class="fa fa-sitemap fa-2x"></i>
-        <span>Dept.s</span>
-      </a>
-    </li>
+  <!-- Main nav -->
+  <ul class="nav navbar-collapse collapse navbar-collapse-primary">
+    {{#each navItems}}
+      {{side-nav name=name url=url icon=icon tagName="li"}}
+    {{/each}}
   </ul>
 </div>

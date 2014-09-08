@@ -1,0 +1,16 @@
+<div class="accordion-group">
+
+  <div class="accordion-heading">
+    <a class="accordion-toggle" {{action "toggle"}}>
+      {{title}} <i class="fa fa-cog pull-right"></i>
+    </a>
+  </div>
+  {{#if isContentVisible}}
+    <div id="collapseOne" class="accordion-body">
+      <div class="accordion-inner">
+        {{yield}}
+      </div>
+    </div>
+  {{/if}}
+
+</div>

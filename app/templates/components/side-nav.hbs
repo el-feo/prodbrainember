@@ -1,20 +1,5 @@
-<div class="sidebar-background">
-  <div class="primary-sidebar-background"></div>
-</div>
-
-<div class="primary-sidebar">
-
-  <!-- Main nav -->
-  <ul class="nav navbar-collapse collapse navbar-collapse-primary">
-
-  {{#each navItems}}
-        <li class="">
-          <span class="glow"></span>
-          {{#link-to 'projects'}}
-            <i {{bind-attr class='icon'}}></i>
-            <span>{{name}}</span>
-          {{/link-to}}
-        </li>
-  {{/each}}
-    </ul>
-</div>
+<span class="glow"></span>
+{{#link-to url href="view.href"}}
+  <i {{bind-attr class='icon'}}></i>
+  <span>{{name}}</span>
+{{/link-to}}
