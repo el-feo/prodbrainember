@@ -16,5 +16,6 @@ export default DS.Model.extend({
   billingPhone:        DS.attr('string'),
   billingFax:          DS.attr('string'),
   billingEmail:        DS.attr('string'),
-  assignments:         DS.hasMany('assignment', {async: true})
+  assignments:         DS.hasMany('assignment', {async: true}),
+  purchaseOrders:      DS.hasMany('purchaseOrder', {async: true})
 });

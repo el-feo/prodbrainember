@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   // tagName:           li,
-  className:         ['active'],
+  classNameBindings: ['active'],
   active:            false,
-  actions: {
+  actions:          {
                      toggle: function(){
                       this.toggleProperty('active');
                     }

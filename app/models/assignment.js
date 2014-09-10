@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   email:           DS.attr('string'),
-  projectId:       DS.attr('number'),
+  project:       DS.belongsTo('project'),
   userId:          DS.attr('number'),
   title:           DS.attr('string'),
   createdAt:       DS.attr('date'),
