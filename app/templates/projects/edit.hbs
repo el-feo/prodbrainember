@@ -1,0 +1,141 @@
+{{top-area title=name subtitle=billingCompany class="row" icon="fa fa-edit"}}
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-12">
+    	<div class="box">
+        <div class="box-header">
+          <span class="title"><i class="fa fa-film fa-lg"></i></span>
+        </div>
+
+        <div class="box-content">
+          <form class="form-horizontal fill-up validatable">
+
+            <div class="padded">
+
+              <div class="form-group">
+  							<label class="control-label col-lg-2">Project Name:</label>
+                <div class="col-lg-10">
+                  {{input type="text" value=name class="validate[required]"}}
+                </div>
+  						</div>
+
+              <div class="form-group">
+                <label class="control-label col-lg-2">Budget Currency:</label>
+                <div class="col-lg-10">
+                  {{input type="text" value=currencyCode class="chzn-select"}}
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-lg-2">Start Date:</label>
+                <div class="col-lg-10">
+                  {{input type="text" value=principalStart class="datepicker"}}
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-lg-2">End Date:</label>
+                <div class="col-lg-10">
+                  {{input type="text" value=principalEnd class="datepicker"}}
+                </div>
+              </div>
+
+  						<div class="form-group">
+                <label class="control-label col-lg-2">Purchase Order Start:</label>
+                <div class="col-lg-10">
+                  {{input type="text" value=purchaseOrderStart class=""}}
+                </div>
+              </div>
+
+  						<div class="form-group">
+                <label class="control-label col-lg-2"><i class="fa fa-info-circle" data-original-title="Any purchase order at or above this amount will require a 'super approver'.  Leave this amount at zero if you don't need a special approver. Note that a user will need to be assigned to the project with the 'super approver' role in order for this feature to work." data-placement="right" rel="tooltip"></i> Super Approver Limit:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=maxLimit class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">Company Name:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingCompany class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">Address:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingAddress1 class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">Address Cont.:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingAddress2 class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">City:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingCity class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">State / Province:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingState class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">Postal Code:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingZip class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">Country:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingCountry class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">Phone:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingPhone class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">Fax:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingFax class=""}}
+  							</div>
+  						</div>
+
+  						<div class="form-group">
+  							<label class="control-label col-lg-2">Email:</label>
+  							<div class="col-lg-10">
+  								{{input type="text" value=billingEmail class=""}}
+  							</div>
+  						</div>
+
+
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-blue">Save changes</button>
+              <button type="button" class="btn btn-default">Cancel</button>
+            </div>
+  				</form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

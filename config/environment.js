@@ -18,6 +18,11 @@ module.exports = function(environment) {
     }
   };
 
+
+  ENV['simple-auth'] = {
+    authorizer: 'simple-auth-authorizer:devise'
+  }
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -27,7 +32,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'test') {
-
+    ENV.baseURL = '/'; // Testem prefers this...
   }
 
   if (environment === 'production') {

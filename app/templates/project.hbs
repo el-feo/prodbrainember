@@ -1,0 +1,22 @@
+{{top-area title=name subtitle=billingCompany class="row" icon="fa fa-film"}}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			{{#bs-panel heading="Project Info" collapsible=true cog=true}}
+				{{partial "projects/showinfo"}}
+			{{/bs-panel}}
+		</div>
+		<div class="col-md-3">
+			{{#bs-panel heading="Tax Rates" collapsible=true cog=true style="padding:0;"}}
+				{{partial "projects/showtaxes"}}
+			{{/bs-panel}}
+		</div>
+		<div class="col-md-3">
+			{{#bs-panel heading="Currencies" collapsible=true cog=true style="padding:0;"}}
+				{{partial "projects/showcurrencies"}}
+			{{/bs-panel}}
+		</div>
+	</div>
+
+</div>

@@ -5,6 +5,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp();
 
 // Javascript Libraries
+// app.import('vendor/firebase-simple-login/firebase-simple-login.js');
 app.import('vendor/bootstrap-sass-official/assets/javascripts/bootstrap.js');
 app.import('vendor/d3/d3.js');
 app.import('vendor/sparkline/dist/jquery.sparkline.js');

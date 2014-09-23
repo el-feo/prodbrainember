@@ -23,33 +23,11 @@
   <div class="collapse navbar-collapse navbar-collapse-top">
     <div class="navbar-right">
 
-      <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle dropdown-avatar" data-toggle="dropdown">
-          <span>
-            <img src="assets/coreadmin/avatars/avatar1.jpg" alt="" class="menu-avatar" />
-            <span>John Smith <i class="fa fa-caret-down"></i></span>
-            <span class="badge badge-dark-red">5</span>
-          </span>
-          </a>
-          <ul class="dropdown-menu">
-            <!-- the first element is the one with the big avatar, add a with-image class to it -->
-            <li class="with-image">
-              <div class="avatar">
-                <img src="assets/coreadmin/avatars/avatar1.jpg" alt="" />
-              </div>
-              <span>John Smith</span>
-            </li>
-
-            <li class="divider"></li>
-
-            <li><a href="#"><i class="icon-user"></i> <span>Profile</span></a></li>
-            <li><a href="#"><i class="icon-cog"></i> <span>Settings</span></a></li>
-            <li><a href="#"><i class="icon-envelope"></i> <span>Messages</span> <span class="label label-dark-red pull-right">5</span></a></li>
-            <li><a href="#"><i class="icon-off"></i> <span>Logout</span></a></li>
-          </ul>
-        </li>
-      </ul>
+      {{#if session.isAuthenticated}}
+        <button {{ action 'invalidateSession' }}>Logout</button>
+      {{else}}
+        {{#link-to 'login'}}Login{{/link-to}}
+      {{/if}}
     </div>
 
   </div><!-- /.navbar-collapse -->

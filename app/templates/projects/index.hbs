@@ -5,9 +5,9 @@
   {{#projects-datatable}}
     {{#each}}
       <tr>
-        <td>{{#link-to 'projects.show' this }}<i class="fa fa-film"></i> : {{name}}{{/link-to}}</td>
-        <td>{{format-date principal_start 'LL'}}</td>
-        <td>{{format-date principal_end 'LL'}}</td>
+        <td>{{#link-to 'project' this }}<i class="fa fa-film"></i>  {{name}}{{/link-to}}</td>
+        <td>{{format-date principalStart 'LL'}}</td>
+        <td>{{format-date principalEnd 'LL'}}</td>
         <td>{{po_count}}</td>
       </tr>
     {{/each}}
